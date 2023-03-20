@@ -1,0 +1,113 @@
+
+@import "_fonts";
+
+*{
+scroll-behavior: smooth;
+}
+
+body{
+	
+	margin: 0;
+	padding: 0;
+	
+	background-color: rgb(255, 255, 255);
+
+}
+
+table{
+	margin-bottom: 20px;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgb(72, 202, 235);
+	padding-left: 30px;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.61);
+}
+table td{
+	position: relative;
+	display: inline-block;
+}
+td{
+	padding: 20px;
+}
+
+
+//=======   album sections
+/*section{
+	position: relative;
+	
+	height: 850px;
+	
+	justify-content: center;
+	align-items: center;
+	
+}*/
+
+.container{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#info{
+	margin: 0px auto;
+	max-width: 1500px;
+	
+	//style
+	border-radius: 15px;
+	border: 2px solid rgba(0, 0, 0, 0.226);
+	padding: 30px;
+	word-wrap: break-word;
+	box-shadow: 0 12px 25px rgba(128, 128, 128, 0.596);
+	
+	
+}
+h1{
+margin: 20px;
+}
+
+//===============contact============================
+#inline{
+	width: 300px;
+}
+
+#inline,.map{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.map{
+	border: 1px solid black;
+	margin-left: 130px;
+	margin-bottom: 40px;
+	width: 600px;
+	height: 500px;
+}
+
+.content{
+	padding:  60px;
+}
+
+@media (max-width: 1500px){
+	.container{
+		margin-top: calc(200px + (100 + 30) * ((100vw - 320px)/(1500 - 320)));
+
+	}
+	#info{
+		padding: calc(20px + (30 - 20) * ((100vw - 320px)/(1500 - 320)));
+		
+	}
+	p,li,h2,h1{
+		font-size: calc(50px + (22 + 50) * ((100vw - 320px)/(1500 - 320)));
+	}
+	
+	tr{
+		font-size: calc(20px + (22 + 5) * ((100vw - 320px)/(1500 - 320)));
+	}
+
+	
+}
